@@ -1,7 +1,7 @@
 from tkinter import *
 import subprocess
 def open():
-    w=e.get()
+    w=var.get()
 	    if w=="notepad" or w=="n++"  or w=="note++":
 	        subprocess.Popen([r"C:\Program Files (x86)\Notepad++\notepad++.exe"])
 		    elif w=="chrome" or w=="google" or w=="gchrome":
@@ -17,12 +17,16 @@ def open():
 								    m.mainloop()
 						        #print("Enter a valid application")
 
+menu=["n++","google","fox"]  #dropdown menu
 master = Tk()
 master.title("cortona daddy")
 master.geometry("300x250")
 master.configure(bg="cyan")
+var=StringVar(master)
+var.set(menu[0])
 Label(master,text="Give your Application name :",bg="cyan").grid(row=3,column=5)
-e=Entry(master)
+e=OptionMenu(master,var,*menu)
+#e=Entry(master)
 e.grid(row=3,column=6)
 Button(master, text='open', width=5, command=open).grid(row=4,column=6)
 master.mainloop()
