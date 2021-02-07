@@ -7,3 +7,6 @@ Resolution :
             Apping is the thing which will get started when computer starts. In that GUI app there will be applications which will be used regularly. We can directly open from this.
             
            
+Requirements :
+            It needs one excel file where application names and path of that applications.
+            Program fetches information and do the things.
