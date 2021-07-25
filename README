@@ -4,7 +4,7 @@ Problem Statement :
         
 Resolution :
 
-            Apping is the thing which will get started when computer starts. In that GUI app there will be applications which will be used regularly. We can directly open from this.
+            Apping is the thing which will get started when computer booted up(Need to add this app in startup apps). In that GUI app there will be applications which will be used regularly. We can directly open from this.
             
            
 Requirements :
